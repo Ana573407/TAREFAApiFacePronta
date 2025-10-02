@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\426109624\\Documents\\TarefaFAcebookApi\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\426109624\\Documents\\TarefaFAcebookApi\\wwwroot\\backen.js",
+      "PackagePath": "staticwebassets\\backen.js"
+    },
+    {
+      "Id": "C:\\Users\\426109624\\Documents\\TarefaFAcebookApi\\wwwroot\\fedd.html",
+      "PackagePath": "staticwebassets\\fedd.html"
+    },
+    {
+      "Id": "C:\\Users\\426109624\\Documents\\TarefaFAcebookApi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\426109624\\Documents\\TarefaFAcebookApi\\wwwroot\\style-feed.css",
+      "PackagePath": "staticwebassets\\style-feed.css"
+    },
+    {
+      "Id": "C:\\Users\\426109624\\Documents\\TarefaFAcebookApi\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TarefaFAcebookApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TarefaFAcebookApi.props",
+      "PackagePath": "build\\TarefaFAcebookApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TarefaFAcebookApi.props",
+      "PackagePath": "buildMultiTargeting\\TarefaFAcebookApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TarefaFAcebookApi.props",
+      "PackagePath": "buildTransitive\\TarefaFAcebookApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

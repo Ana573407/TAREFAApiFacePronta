@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feed - Facebook Simples</title>
+    <link rel="stylesheet" href="style-feed.css" />
+</head>
+<body>
+  <div class="feed-container">
+    <h1>Feed</h1>
+
+    <div class="post">
+      <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="Foto do post" class="post-image" />
+      
+      <div class="actions">
+        <button id="likeButton">Curtir</button> <span id="likeCount">0 curtidas</span>
+      </div>
+
+      <div class="comment-section">
+        <textarea id="commentInput" placeholder="Escreva um comentário..."></textarea>
+        <button id="commentButton">Comentar</button>
+
+        <div id="commentsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const likeButton = document.getElementById('likeButton');
+    const likeCountSpan = document.getElementById('likeCount');
+    const commentButton = document.getElementById('commentButton');
+    const commentInput = document.getElementById('commentInput');
+    const commentsList = document.getElementById('commentsList');
+
+    let likeCount = 0;
+    let liked = false;
+
+    likeButton.addEventListener('click', () => {
+      if (!liked) {
+        likeCount++;
+        liked = true;
+        likeButton.textContent = 'Curtido';
+      } else {
+        likeCount--;
+        liked = false;
+        likeButton.textContent = 'Curtir';
+      }
+      likeCountSpan.textContent = `${likeCount} ${likeCount === 1 ? 'curtida' : 'curtidas'}`;
+    });
+
+    commentButton.addEventListener('click', () => {
+      const comment = commentInput.value.trim();
+      if(comment) {
+        const newComment = document.createElement('p');
+        newComment.textContent = comment;
+        commentsList.appendChild(newComment);
+        commentInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
