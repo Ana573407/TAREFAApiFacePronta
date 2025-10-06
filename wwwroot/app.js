@@ -1,8 +1,7 @@
 document.getElementById('userForm').addEventListener('submit', async function(event) {
   event.preventDefault();
 
-  const form = this; // pegar o formulário
-
+  const form = this; 
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
   const senha = document.getElementById('senha').value.trim();
@@ -27,7 +26,7 @@ document.getElementById('userForm').addEventListener('submit', async function(ev
     form.reset();
 
     setTimeout(() => {
-      window.location.href = 'fedd.html'; // ajuste conforme sua página de destino
+      window.location.href = 'fedd.html'; 
     }, 1500);
 
   } catch (error) {
@@ -35,3 +34,4 @@ document.getElementById('userForm').addEventListener('submit', async function(ev
     mensagemEl.textContent = error.message;
   }
 });
+
