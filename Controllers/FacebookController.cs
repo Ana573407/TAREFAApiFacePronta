@@ -31,11 +31,11 @@ namespace TarefaFAcebookApi.Controllers
             }
             catch (Exception ex)
             {
-                // Retorna erro detalhado para ajudar no debug (remova depois)
+             
                 return StatusCode(500, new { message = "Erro ao salvar usuário: " + ex.Message });
             }
         }
 
-        // Outros métodos aqui (GET, PUT, DELETE) se desejar...
     }
 }
+
